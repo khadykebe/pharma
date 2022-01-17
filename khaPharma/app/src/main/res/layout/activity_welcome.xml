@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Welcome">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="256dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/welcom"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Bienvenue"
+        android:textColor="@color/vert"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="114dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Sur Application Pharma"
+        android:textColor="@color/vert"
+        android:textSize="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/fbutton"
+        android:elevation="20dp"
+        android:text="Connexion"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+         />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/appCompatButton1"-->
+<!--        android:layout_width="294dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:textSize="13dp"-->
+<!--        android:text="Creer un compte"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/fbutton"-->
+<!--        android:elevation="20dp"-->
+<!--        />-->
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

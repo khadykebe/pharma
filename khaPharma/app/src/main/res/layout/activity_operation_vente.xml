@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Venteur.OperationVente">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="15dp"
+        app:titleTextColor="@color/white" >
+        <Button
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_keyboard_backspace_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/app_name"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/qte"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/card"
+            android:hint="qte"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/produit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="produit"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/card"
+            android:padding="10dp"
+
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/verse"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/card"
+            android:hint="montant versé"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acheter"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:text="acheter"
+            android:textColor="@color/vert"
+            android:background="@drawable/button"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/montant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:text="@string/montant_rendu"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/rendue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27dp"
+            android:visibility="gone"
+
+            android:textSize="20dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/facture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="générer facture"
+        android:visibility="gone"
+        android:textColor="@color/vert"
+        />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ajproduit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="ajout produit"
+            android:layout_gravity="bottom"
+            android:textColor="@color/vert"
+            android:background="@drawable/button"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/listeProduit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:text="Liste produit"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

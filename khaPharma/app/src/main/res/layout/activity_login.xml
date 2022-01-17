@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Login">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/haut"
+                android:elevation="8dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connectez-vous"
+                    android:textSize="25dp"
+                    android:layout_marginTop="95dp"
+
+                    android:layout_marginStart="60dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textColor="#FF5722"
+                android:visibility="gone"
+                android:text="Email ou mot de passe invalide"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="60dp"
+                android:textSize="15dp"
+                android:text="Email"
+
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="email"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:elevation="4dp"
+                android:background="@drawable/background"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp"
+                android:text="Mot de passe"
+                android:textSize="15dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="password"
+                android:layout_marginStart="50dp"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:elevation="4dp"
+                android:background="@drawable/background"
+                app:endIconMode = "password_toggle"
+                />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:text="Connexion"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:background="@drawable/fbutton"
+                android:elevation="12dp"
+
+
+                />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/oublier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/Mot_passe"
+            android:layout_gravity="center"
+            android:textColor="@color/vert"
+            android:textSize="15dp"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

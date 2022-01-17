@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/may_nav"
+    app:startDestination="@id/ajoutStock3">
+    <fragment
+        android:id="@+id/ajoutStock3"
+        android:name="com.example.khapharma.ajoutStock"
+        android:label="fragment_ajout_stock"
+        tools:layout="@layout/fragment_ajout_stock" />
+    <fragment
+        android:id="@+id/supStock2"
+        android:name="com.example.khapharma.supStock"
+        android:label="fragment_sup_stock"
+        tools:layout="@layout/fragment_sup_stock" />
+</navigation>

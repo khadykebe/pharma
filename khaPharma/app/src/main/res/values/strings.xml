@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pharma</string>
+    <string name="Mot_passe"><u>Mot de passe oublié ?</u></string>
+    <string name="liste_des_produit_en_stock"> <u> Liste des produits en stock </u> </string>
+    <string-array name="Role">
+        <item>pharmacien</item>
+        <item>gerant</item>
+        <item>vendeur</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ajout_stock">Ajout Stock</string>
+    <string name="supprmer">supprmer</string>
+    <string name="produit">produit</string>
+    <string name="ajouter_un_nouveau_stock"> <u> Ajouter un nouveau Stock </u></string>
+    <string name="montant_rendu"> <u>montant rendu </u> :</string>
+    <string name="ajout_nouveau_produit"><u>Ajout nouveau produit</u> </string>
+    <string name="gestion_des_stock"><u>gestion des Stocks</u></string>
+    <string name="gestion_des_vente"><u>gestion des Ventes</u></string>
+    <string name="passe_une_commande"><u>passer une commande</u></string>
+    <string name="gestion_des_utilisateur"><u>gestion des Utilisateurs</u></string>
+    <string name="mot_de_passe_oublier"><u>Mot de passe oublier</u></string>
+
+    <string-array name="role">
+        <item>pharmacien</item>
+        <item>gérant</item>
+        <item>vendeur</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ajoutStock"
+        android:title="@string/ajout_stock"
+        android:icon="@drawable/ic_baseline_add_to_photos_24"
+        />
+    <item
+        android:id="@+id/supprimer"
+        android:title="@string/supprmer"
+        android:icon="@drawable/ic_baseline_delete_24"/>
+</menu>

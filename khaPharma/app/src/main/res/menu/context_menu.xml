@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pharmacien"
+        android:title="pharmacien" />
+    <item
+        android:id="@+id/gerant"
+        android:title="gerant" />
+    <item
+        android:id="@+id/vendeur"
+        android:title="vendeur" />
+</menu>
